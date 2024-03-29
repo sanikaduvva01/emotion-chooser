@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Face Chooser</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Emotion Face Chooser</h1>
+    <button class=" btn btn-h" onclick="changeImage('happy')">Happy</button>
+    <button class=" btn btn-s" onclick="changeImage('sad')">Sad</button>
+    <button  class=" btn btn-a"onclick="changeImage('angry')">Angry</button>
+    <button  class=" btn btn-su"onclick="changeImage('surprised')">Surprised</button>
+    <button  class=" btn btn-n"onclick="changeImage('neutral')">neutral</button>
+    <div id="image-container">
+        <img id="emotion-image" src="emotion.png" alt="Emotion Image">
+    </div>
+
+    <script>
+        
+        function changeImage(emotion) {
+            const imageElement = document.getElementById('emotion-image');
+            const imageSources = {
+                happy: 'happiness.png',
+                sad: 'sad.png',
+                angry: 'angry.png',
+                surprised: 'surprised.png',
+                neutral:'neutral.png'
+            };
+            imageElement.src = imageSources[emotion];
+        }
+    </script>
+</body>
+</html>
+

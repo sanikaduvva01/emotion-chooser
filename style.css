@@ -1,0 +1,44 @@
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 100vh;
+     font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+  }
+  .btn {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: 5px;
+  }
+
+  button:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .btn-h{
+    background-color: yellow;
+  }
+
+  .btn-s{
+    background-color: #80D0C7;
+  }
+
+  .btn-a{
+    background-color: plum;
+  }
+
+  .btn-su{
+    background-color: palevioletred;
+  }
+
+  .btn-n{
+    background-color: peachpuff;
+  }
+  img {
+      max-width: 100%;
+      margin-top: 20px;
+      height: 80px;
+  }
